@@ -7,17 +7,18 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const Banner = () => {
   return (
-   <div   className="bg-gray-400 w-full h-screen flex flex-col justify-center items-center" >
+  <div id="banner" className="w-full h-screen bg-gray-800" >
+     <div   className=" w-full h-screen  flex flex-col justify-center items-center" >
      <section className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto  py-16 lg:py-24">
 
       <div className="lg:w-1/2 text-center lg:text-left space-y-5">
-        <h1 className="text-5xl font-extrabold text-gray-800">
+        <h1 className="text-5xl font-extrabold text-white/80">
           Farse <span className="text-blue-600">IT</span>
         </h1>
-        <p className="text-3xl font-semibold text-gray-700">
+        <p className="text-3xl font-semibold text-white/80">
           Find a <span className="text-blue-500">Robust </span> Sustainable E-platform
         </p>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-white/800">
           Elevating Your Digital Experience!  <br />
           FarseIT's innovative web solutions. Specializing in web development, we offer expertise and a client-centric approach for businesses. 
           Partner with us for cutting-edge solutions in **e-commerce, school management,** and **private company operations.**
@@ -36,8 +37,8 @@ const Banner = () => {
     </div>
 
 
-    <div className="w-24 h-24 flex items-center justify-center bg-gray-200 rounded-full shadow-md border border-gray-500">
-      <TbBrandNextjs className="text-black text-6xl" />
+    <div className="w-24 h-24 flex items-center justify-center bg-blue-300 rounded-full shadow-md border border-gray-800">
+      <TbBrandNextjs className="text-blue-700 text-6xl" />
     </div>
 
  
@@ -62,15 +63,15 @@ const Banner = () => {
 
 <div >
  <div className="max-w-7xl mx-auto">
- <h1 className="text-lg ">
+ <h1 className="text-lg text-white/80">
   We harness the essence of Web 3.0 and emerging technologies to architect inventive, intelligent, and sustainable web development solutions and services. As a leading IT service provider and software company, our forte lies in ideation, skillfully connecting the dots to shape a more advanced and audacious digital future.
   </h1>
 
   <div className="mt-7">
       {/* Button Group */}
-      <div className="flex justify-between gap-4 w-full p-4 bg-gray-500 rounded-t-lg shadow-md">
+      <div className="flex justify-between gap-4 w-full p-4 bg-gray-700 rounded-t-lg shadow-md">
         <NavLink
-          to="/frontend"
+          to="/"
           className={({ isActive }) =>
             `w-full px-6 py-2 text-lg font-semibold text-white  border border-gray-300 rounded-lg shadow-sm ${
               isActive ? "bg-blue-500 text-white" : "hover:bg-blue-500 hover:text-white"
@@ -116,7 +117,7 @@ const Banner = () => {
         <NavLink
           to="/tools"
           className={({ isActive }) =>
-            `w-full px-6 py-2 text-lg font-semibold text-black  border border-gray-300 rounded-lg shadow-sm ${
+            `w-full px-6 py-2 text-lg font-semibold text-white  border border-gray-300 rounded-lg shadow-sm ${
               isActive ? "bg-red-500 text-white" : "hover:bg-red-500 hover:text-white"
             } transition-all duration-300 ease-in-out`
           }
@@ -126,13 +127,14 @@ const Banner = () => {
       </div>
 
       {/* Outlet Section */}
-      <div className=" p-6 bg-gray-500 rounded-b-lg shadow-md">
+      <div className=" p-6 bg-gray-700 rounded-b-lg shadow-md">
         <Outlet />
       </div>
     </div>
  </div>
 </div>
    </div>
+  </div>
   );
 };
 

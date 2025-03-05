@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import Backend from "../Home/Banner/Backend/Backend";
+import Cms from "../Home/Banner/Cms/Cms";
+import Database from "../Home/Banner/Database/Database";
+import Frontend from "../Home/Banner/Frontend/Frontend";
+import Tools from "../Home/Banner/Tools/Tools";
 import Home from "../Home/Home";
 import MainLayout from "../Main/MainLayout";
-import Frontend from "../Home/Banner/Frontend/Frontend";
-import Backend from "../Home/Banner/Backend/Backend";
-import Database from "../Home/Banner/Database/Database";
-import Cms from "../Home/Banner/Cms/Cms";
-import Tools from "../Home/Banner/Tools/Tools";
 
 
 
@@ -20,7 +20,7 @@ const routes = createBrowserRouter([
                 element : <Home/>,
                 children : [
                     {
-                        path : '/frontend',
+                        index: true,
                         element : <Frontend/>
                     },
                     {

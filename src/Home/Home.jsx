@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutus from "./Aboutus/Aboutus";
 import Banner from "./Banner/Banner";
+import Features from "./Features/Features";
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
       </section>
       <section
         id="services"
-        className="h-screen flex items-center justify-center bg-yellow-500 text-white text-4xl font-bold"
+        className="flex min-h-[calc(100vh-100px)] items-center justify-center bg-gray-800 text-white text-4xl font-bold"
       >
-        Services
+       <Features/>
       </section>
       <section
         id="projects"

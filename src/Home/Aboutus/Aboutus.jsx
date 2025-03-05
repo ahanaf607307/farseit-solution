@@ -3,18 +3,18 @@ import aboutImage from '../../assets/about/about.png';
 
 const Aboutus = () => {
     return (
-        <div className="w-full bg-gray-100 py-24">
+        <div className="w-full bg-gray-700 py-24">
         <div className=" px-3 md:px-10 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-center lg:justify-between gap-12">
             {/* Text Section */}
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+              <h2 className="text-3xl font-extrabold text-white/90 mb-4">
                 About Us
               </h2>
-              <h3 className="text-2xl font-semibold text-blue-600 mb-6">
+              <h3 className="text-2xl font-semibold text-blue-500 mb-6">
                 🚀 Elevate Your Digital Presence with farseIT! 🌐
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-white/90 leading-relaxed mb-6">
                 Discover innovation and expertise at the heart of farseIT's web
                 development solutions. Tailored for your unique needs, we craft
                 powerful e-commerce experiences, streamline school management, and
