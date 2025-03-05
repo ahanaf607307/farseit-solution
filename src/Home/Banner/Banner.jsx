@@ -15,7 +15,7 @@ const Banner = () => {
           Farse <span className="text-blue-600">IT</span>
         </h1>
         <p className="text-3xl font-semibold text-gray-700">
-          Find a <span className="text-blue-500">Robust</span> Sustainable E-platform
+          Find a <span className="text-blue-500">Robust </span> Sustainable E-platform
         </p>
         <p className="text-lg text-gray-600">
           Elevating Your Digital Experience!  <br />

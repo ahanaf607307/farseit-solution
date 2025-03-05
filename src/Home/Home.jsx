@@ -11,6 +11,7 @@ const Home = () => {
       >
         <Banner />
       </section>
+      {/* about section */}
       <section
         id="about"
         className="min-h-[calc(100vh-400px)] flex items-center justify-center  text-white text-4xl font-bold"
